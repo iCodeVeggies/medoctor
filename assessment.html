@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="MEDoctor - Interview Start - My Free Medical Interview Online. Here I Evaluate my Symptoms and get my Health Report.">
+   <meta name="keywords" content="symptom,symptom checker,cervical cancer,back pain,knee pain,symptoms and treatments,diabetes symptoms,medical advice,body aches,skin cancer,heart disease symptoms,lymphoma,breast cancer,liver disease symptoms">
+   <meta name="author" content="Sylvester Klirowski">
+
+   <title>MEDOCTOR - Interview Start - My Free Medical Interview Online</title>
+   <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+
+   <!-- Bootstrap core CSS -->
+   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- Custom fonts for this template -->
+   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+   <!-- Custom styles for this template -->
+   <link href="css/agency.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="page-top">
+
+   <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="defaultNav">
+      <div class="container">
+         <a class="navbar-brand js-scroll-trigger" href="index.html">
+            <img src="img/logo-281x76.png" alt="Medoctor">
+         </a>
+         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="index.html#faq">FAQ</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     About
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                     <a class="dropdown-item" href="about.html#about">About</a>
+                     <a class="dropdown-item" href="about.html#team">Team</a>
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="index.html#contact">Contact</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+
+   <!-- Assessment -->
+   <section id="assessment-test">
+      <div class="container">
+         <div class="row text-center">
+            <div class="col-md-9">
+               <div class="card text-muted">
+                  <h5 class="card-header">Health Assessment</h5>
+                  <div class="card-body" id="initial-question">
+                     <h5 class="card-title">Where Is Your Primary Symptom Located?</h5>
+                     <form>
+                        <div class="form-group">
+                           <div class="form-row">
+                              <div class="col">
+                                 <select class="form-control">
+                                    <option selected disabled>Please select</option>
+                                    <option>Whole Body</option>
+                                    <option>Skin</option>
+                                    <option>Muscle</option>
+                                    <option>Joint</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="form-row">
+                              <div class="col">
+                                 <label for="">Once you click on the continue button, you will be asked 30 to 50 questions. The exact number
+                                    will depend on your symptoms and your answers.</label>
+                              </div>
+                           </div>
+                           <div class="form-row">
+                              <div class="col">
+                                 <input type="submit" class="btn btn-primary text-uppercase" id="assessment-next" value="Continue">
+                              </div>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="card-body" id="subsequent-questions" hidden>
+                     <h5 class="card-title" id="subseq-ques-text"></h5>
+                     <div class="btn-group">
+                        <button type="button" id="yes-btn" class="btn btn-primary">Yes</button>
+                        <button type="button" id="no-btn" class="btn btn-danger">No</button>
+                        <button type="button" id="skip-btn" class="btn btn-info">Skip</button>
+                        <button type="button" class="btn btn-warning">Review</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <img class="img-fluid" src="img/doctor-360x399.png" alt="">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="bg-light">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-4 copyright">
+               US Patent #7,149,756 A (December, 2006)
+               <br> EPO Patent #EP 1284639 B1 (July, 2008)
+            </div>
+            <div class="col-md-4">
+               <ul class="list-inline social-buttons">
+                  <li class="list-inline-item">
+                     <a href="https://twitter.com/medoctorinc" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                     </a>
+                  </li>
+                  <li class="list-inline-item">
+                     <a href="https://www.facebook.com/pg/MEDoctorInc/about/" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                     </a>
+                  </li>
+                  <li class="list-inline-item">
+                     <a href="https://www.linkedin.com/company/medoctor-inc-/" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-md-4 copyright">
+               <address>
+                  MEDoctor Systems, Inc.
+                  <br> 251 Little Falls Drive
+                  <br> Wilmington, DE 19808, USA
+                  <br> E-mail
+                  <a href="mailto:info@medoctor.com">info@medoctor.com</a>
+               </address>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-4">
+               <span class="copyright">Copyright &copy; 2018 MEDoctor Systems, Inc.</span>
+            </div>
+            <div class="col-md-4">
+               <ul class="list-inline quicklinks">
+                  <li class="list-inline-item">
+                     <a href="javascript:void(0)">Terms of Use</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- Bootstrap core JavaScript -->
+   <script src="vendor/jquery/jquery.min.js"></script>
+   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+   <!-- Plugin JavaScript -->
+   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+   <!-- Custom Random Functions -->
+   <script src="js/assessment_page.js"></script>
+
+   <!-- Contact form JavaScript -->
+   <script src="js/jqBootstrapValidation.js"></script>
+   <script src="js/contact_me.js"></script>
+
+   <!-- Custom scripts for this template -->
+   <script src="js/agency.min.js"></script>
+
+
+
+</body>
+
+</html>
