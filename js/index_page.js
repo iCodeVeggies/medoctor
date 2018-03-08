@@ -14,7 +14,7 @@ function toggleHeadingText() {
       introHeading.textContent = 'We can help';
    }
 }
-window.onload = toggleHeadingText;
+window.onload = toggleHeadingText();
 window.onresize = toggleHeadingText;
 
 
