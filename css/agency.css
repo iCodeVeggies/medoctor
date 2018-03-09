@@ -167,7 +167,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/pexels-photo-355934.jpeg");
+  background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -176,6 +176,7 @@ header.masthead {
   -o-background-size: cover;
   background-size: cover;
 }
+
 
 header.masthead .intro-text {
   padding-top: 150px;
