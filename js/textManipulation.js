@@ -17,13 +17,13 @@ var faqParaText = [
    "MEDoctor practices policies that are intended to protect the confidentiality of personal information obtained from users in the course of its regular business functions. We are committed to protecting information about users, especially the confidential nature of any personal information (PI) we collect. Personal information is information that is capable of being associated with an individual through one or more identifiers including but not limited to, a Social Security number, a driver's license number, a state identification card number, an account number, a credit or debit card number, a passport number, an alien registration number or a health insurance identification number, and does not include publicly available information that is lawfully made available to the general public from federal, state or local government records, or widely distributed media. To this end, the MEDoctor Symptom Checker does not require that you identify yourself in any way other than an account name and password that you yourself choose. While the name you choose may be associated with you or your activities on the Internet (such as an email address), there is no requirement that it be so. MEDoctor considers the account name, password, and entered data to be sensitive information and restricts access to it."
 ];
 
-/* WINDOW ONLOAD and RESIZE */
-window.onload = function () {
+/* WINDOW ONLOAD and RESIZE */ //TODO
+/* window.onload = function () {
    toggleMobileDesktop();
   // addListeners(); -- TODO
 }
 window.onresize = toggleMobileDesktop;
-
+ */
 /* ADD LISTENERS */
 function addListeners() {
    // expand text listeners
