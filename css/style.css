@@ -261,6 +261,9 @@ a#go-arrow:hover {
     .card-body {
         padding: 0.5rem;
     }
+    div.card {
+        margin-top: 5px;
+    }
 }
 
 
