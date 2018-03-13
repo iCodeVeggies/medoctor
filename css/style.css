@@ -197,6 +197,47 @@ a#go-arrow:hover {
     animation: bounce 2s infinite;
 }
 
+/* BOOSTRAP CARD */
+
+div.card {
+    margin-top: 20px;
+    font-family: "Josefin Sans", Helvetica, sans-serif;
+    line-height: normal;
+}
+
+.card-header {
+    color: #fff;
+    background-color: #67A8E8;
+}
+
+.card-header>h5>a {
+    color: #fff;
+}
+
+.card-header>h5>a:hover {
+    color: #0d47a1;
+    text-decoration: none;
+}
+
+
+/* FORM */
+
+.form-row {
+    margin: 0.25em;
+}
+
+
+/* TIMELINE */
+
+.timeline-image>a {
+    color: #fff;
+}
+
+.timeline-image>a:hover {
+    color: #0d47a1;
+    text-decoration: none;
+}
+
 
 /* MOBILE MODE */
 
@@ -264,54 +305,4 @@ a#go-arrow:hover {
     div.card {
         margin-top: 5px;
     }
-}
-
-
-/* 
-@media (max-width: 991px) {
-    header.masthead {
-        background: linear-gradient(281deg, rgba(13, 71, 161, 1) 0%, rgba(79, 195, 247, 1) 100%);
-    }
-} */
-
-
-/* BOOSTRAP CARD */
-
-div.card {
-    margin-top: 20px;
-    font-family: "Josefin Sans", Helvetica, sans-serif;
-    line-height: normal;
-}
-
-.card-header {
-    color: #fff;
-    background-color: #67A8E8;
-}
-
-.card-header>h5>a {
-    color: #fff;
-}
-
-.card-header>h5>a:hover {
-    color: #0d47a1;
-    text-decoration: none;
-}
-
-
-/* FORM */
-
-.form-row {
-    margin: 0.25em;
-}
-
-
-/* TIMELINE */
-
-.timeline-image>a {
-    color: #fff;
-}
-
-.timeline-image>a:hover {
-    color: #0d47a1;
-    text-decoration: none;
 }
