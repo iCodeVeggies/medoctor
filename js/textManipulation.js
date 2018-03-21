@@ -18,12 +18,12 @@ var faqParaText = [
 ];
 
 /* WINDOW ONLOAD and RESIZE */ //TODO
-/* window.onload = function () {
+window.onload = (function () {
    toggleMobileDesktop();
-  // addListeners(); -- TODO
-}
+  addListeners();
+})();
 window.onresize = toggleMobileDesktop;
- */
+
 /* ADD LISTENERS */
 function addListeners() {
    // expand text listeners
@@ -48,25 +48,25 @@ function toggleMobileDesktop() {
       // header text
       introLeadIn.textContent = 'The Only Patented Artificial Intelligence Symptom Checker';
       introHeading.textContent = '';
-     // turnOnTextToggle(false); -- TODO
+     turnOnTextToggle(false); 
    } else {
       // header text
       introLeadIn.textContent = 'The Only Patented Artificial Intelligence Symptom Checker';
       introHeading.textContent = ''; // TODO
-      // turnOnTextToggle(true); -- TODO 
+      turnOnTextToggle(true);
    }
 }
 
 /* TURN ON TEXT TOGGLE */
 function turnOnTextToggle(bool) {
    if (bool) {
-      // showFAQSpan(true); -- TODO
+      showFAQSpan(true); 
       for (var i = 0; i < faqPara.length; i++) {
          // minimize text to 300
          faqPara[i].innerText = faqParaText[i].slice(0, 300) + '...';
       }
    } else {
-      // showFAQSpan(false); -- TODO
+      showFAQSpan(false); 
       for (i in faqPara) {
          faqPara[i].innerText = faqParaText[i];
       }

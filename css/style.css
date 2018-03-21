@@ -1,8 +1,18 @@
+body, html {
+    height: 100%;
+}
+
 body,
 p {
     font-family: "Josefin Sans", Helvetica, sans-serif;
     line-height: normal;
 }
+
+section {
+    padding: 40px;
+}
+
+/* BUTTONS */
 
 .btn {
     margin: 0.25em;
@@ -32,9 +42,8 @@ p {
     box-shadow: 0 0 0 0.2rem rgba(88, 89, 90, 0.5) !important;
 }
 
-section {
-    padding: 40px;
-}
+
+/* TEXT */
 
 .small-sized-text {
     font-size: 15px;
@@ -197,6 +206,7 @@ a#go-arrow:hover {
     animation: bounce 2s infinite;
 }
 
+
 /* BOOSTRAP CARD */
 
 div.card {
@@ -238,6 +248,11 @@ div.card {
     text-decoration: none;
 }
 
+/* HEADER BACKGROUND */
+header.masthead { 
+    height: 100%; 
+    background-size: cover;
+}
 
 /* MOBILE MODE */
 
@@ -253,6 +268,7 @@ div.card {
         margin-top: 1em;
     }
     header.masthead {
+        height: auto;
         background: #67A8E8;
     }
     header.masthead .intro-text {
@@ -298,7 +314,6 @@ div.card {
         padding-right: 5px;
         padding-left: 5px;
     }
-
     .card-body {
         padding: 0.5rem;
     }

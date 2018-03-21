@@ -30,7 +30,7 @@
 
 <body id="page-top">
   <!-- Navigation -->
-  <!--  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <img src="img/logo-281x76.png" alt="Medoctor">
@@ -62,17 +62,23 @@
         </ul>
       </div>
     </div>
-  </nav> -->
+  </nav>
   <!-- Header -->
   <header class="masthead">
     <div class="container">
       <div class="row text-center">
-        <div class="col-md-12">
+        <div class="col-md-12" id="header-content">
           <img src="img/logo-281x76.png" alt="Medoctor">
           <div class="intro-text">
             <div class="intro-lead-in">The Only Patented Artificial Intelligence Symptom Checker</div>
-            <!-- <div class="intro-heading text-uppercase"></div> -->
-
+            <div class="intro-heading text-uppercase"></div>
+            <div class="intro-links">
+              <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#assessment">Free Health Assessment</a>
+              <a class="btn btn-info btn-xl text-uppercase js-scroll-trigger" href="#faq">Learn More</a>
+              <a id="go-arrow" href="#assessment" class="btn btn-circle js-scroll-trigger bounce">
+                <i class="fa fa-4x fa-arrow-circle-down"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -247,7 +253,7 @@
             process '... because it could be dangerous...'. And they cannot see a physician without prior approval by their
             insurance.
           </p>
-          <!-- <span class="show-hide-text">
+         <!--  <span class="show-hide-text">
             <a href="#">
               <i class="fa fa-plus" data-i-num="2"></i>
             </a>
@@ -409,9 +415,10 @@
   <script src="js/agency.min.js"></script>
 
   <!-- Custom Random Functions -->
-  <script src="js/textManipulation.js"></script>
+  <script src="js/navigationHeader.js"></script>
+  <!-- <script src="js/textManipulation.js"></script> -->
   <script src="js/initialAssessmentForm.js"></script>
-  <script src="js/extras.js"></script>
+  <!-- <script src="js/extras.js"></script> -->
 
 
 </body>
