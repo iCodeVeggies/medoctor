@@ -254,6 +254,16 @@ header.masthead {
     background-size: cover;
 }
 
+/* FONT AWESOME ICONS */
+.fa-plus, .fa-minus {
+    color: #67A8E8;
+}
+.fa-plus:hover, .fa-minus:hover {
+    color: #0d47a1;
+    cursor: pointer;
+}
+
+
 /* MOBILE MODE */
 
 @media (max-width: 768px) {
