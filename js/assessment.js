@@ -8,7 +8,6 @@ var subseqQuesText = document.querySelector('#subseq-ques-text')
 // and show template for subsequent questions 
 assessmentNextButton.addEventListener('click', function (e) {
    e.preventDefault();
-   console.log(e);
    initialQuestion.setAttribute('hidden', 'true');
    subsequentQuestions.removeAttribute('hidden');
    nextQuestion();
