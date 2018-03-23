@@ -42,6 +42,15 @@ section {
     box-shadow: 0 0 0 0.2rem rgba(88, 89, 90, 0.5) !important;
 }
 
+.btn#submit-initial-assessment {
+    background-color: #ef5350;
+    border-color: #ef5350;
+}
+
+.btn#submit-initial-assessment:hover {
+    background-color: #b71c1c;
+    border-color: #b71c1c;
+}
 
 /* TEXT */
 
@@ -233,7 +242,7 @@ div.card {
 /* FORM */
 
 .form-row {
-    margin: 0.25em;
+    margin: 0.10em;
 }
 
 
@@ -271,7 +280,12 @@ header.masthead {
         padding: 5px;
     }
     .btn {
-        margin: 0.25em;
+        margin: 0;
+        padding: 0.25em;
+    }
+
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        margin-bottom: .01rem;
     }
     /* give more space when no text in header */
     .intro-lead-in {
@@ -324,10 +338,16 @@ header.masthead {
         padding-right: 5px;
         padding-left: 5px;
     }
+    div.form-group{
+        margin: 0;
+    }
+    div.card-body {
+        padding: .25em;
+    }
     .card-body {
         padding: 0.5rem;
     }
     div.card {
-        margin-top: 5px;
+        margin: 5px;
     }
 }

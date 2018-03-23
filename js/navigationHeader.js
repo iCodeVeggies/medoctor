@@ -58,7 +58,7 @@ function toggleMobileDesktop() {
       headerContent.insertBefore(headerMobileImg, headerContent.firstChild);
     }
     // remove intro links
-    if (introText.children[2]){
+    if (introText.children[1]){
       introText.removeChild(introLinks);
     }
     // turn off toggle text
