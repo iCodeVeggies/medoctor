@@ -310,6 +310,11 @@ header.masthead {
     ul.social-buttons {
         margin: 1em;
     }
+    
+    .text-block {
+        margin-top: .25em;
+    }
+
     .col,
     .col-12,
     .col-4,
