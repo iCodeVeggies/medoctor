@@ -76,6 +76,12 @@ section {
     color: #67A8E8;
 }
 
+header.masthead .intro-text .intro-lead-in {
+    font-style: normal;
+    font-family: "Josefin Sans", Helvetica, sans-serif;
+}
+
+
 .img-stand-alone {
     margin-top: 1em;
 }
