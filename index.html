@@ -71,12 +71,56 @@
           <img src="img/logo-211x57.png" alt="Medoctor">
           <div class="intro-text">
             <div class="intro-lead-in">The Only Patented Artificial Intelligence Symptom Checker</div>
-            <div class="intro-links">
-              <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#assessment">Free Health Assessment</a>
-              <a class="btn btn-info btn-xl text-uppercase js-scroll-trigger" href="#faq">Learn More</a>
-              <a id="go-arrow" href="#assessment" class="btn btn-circle js-scroll-trigger bounce">
-                <i class="fa fa-4x fa-arrow-circle-down"></i>
-              </a>
+            <div class="text-muted col-md-6 float-right" id="assessment-header">
+              <h5>Do you have a Health Concern?</h5>
+              (Your results in 5 minutes)
+              <div class="card">
+                <div class="card-body">
+                  <form action="assessment.html">
+                    <div class="form-group">
+                      <div class="form-row">
+                        <div class="col">
+                          <select class="form-control" id="gender" required>
+                            <option selected disabled>My Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col">
+                          <select class="form-control" id="dob" required>
+                            <option selected disabled>My Date of Birth</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col">
+                          <select class="form-control" id="symptoms" required>
+                            <option selected disabled>My Symptoms Began</option>
+                            <option>Less than 3 days ago</option>
+                            <option>3 to 30 days ago</option>
+                            <option>More than 30 days ago</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col">
+                          <label>
+                            <input type="checkbox" id="disclaimer" required> I agree to
+                            <a href="" class="text-link" id="disclaimer-link" data-toggle="modal" data-target="#dialogModal">disclaimer</a>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col">
+                          <input type="submit" class="btn btn-danger text-uppercase" id="submit-initial-assessment" value="Start My Free Interview">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -87,7 +131,7 @@
   <!-- Assessment -->
   <section id="assessment">
     <div class="container">
-      <div class="row text-center">
+      <div class="row text-center" id="assessment-mobile">
         <div class="col-md-12 text-muted">
           <h5>Do you have a Health Concern?</h5>
           (Your results in 5 minutes)

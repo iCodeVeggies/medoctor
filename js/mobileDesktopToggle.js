@@ -7,7 +7,11 @@ var header = document.querySelector('header');
 var headerContent = document.querySelector('#header-content');
 var headerMobileImg = document.querySelector('#header-content img');
 var introText = document.querySelector('div.intro-text');
-var introLinks = document.querySelector('div.intro-links');
+var introTextLeadIn = document.querySelector('div.intro-lead-in');
+var assessmentHeader = document.querySelector('#assessment-header');
+// Assessment section
+var assessmentMoblCont = document.querySelector('#assessment div.container');
+var assessmentMobile = document.querySelector('#assessment-mobile');
 // FAQs section
 var faqSection = document.querySelector('#faq');
 var faqPara = document.querySelectorAll('#faq p');
@@ -27,8 +31,8 @@ window.onresize = function () {
 }
 
 /* COPY FULL FAQ TEXT */
-function copyFullText(){
-  for (var i = 0; i < faqPara.length; i++){
+function copyFullText() {
+  for (var i = 0; i < faqPara.length; i++) {
     faqParaCopy.push(faqPara[i].innerText);
   }
 }
@@ -44,8 +48,14 @@ function toggleMobileDesktop() {
     if (headerContent.firstElementChild === headerMobileImg) {
       headerContent.removeChild(headerMobileImg);
     }
-    // put in buttons
-    introText.appendChild(introLinks);
+    // put in assessment desktop mode
+    introText.appendChild(assessmentHeader);
+    // remove mobile-mode assessment
+    if (assessmentMoblCont.firstElementChild === assessmentMobile) {
+      assessmentMoblCont.removeChild(assessmentMobile);
+    }
+    // style intro text
+    introTextLeadIn.setAttribute('style', 'width: 700px; float: right;'); 
     // turn on toggle tex
     toggleTextOnOff('on');
   } else {
@@ -57,10 +67,16 @@ function toggleMobileDesktop() {
     if (headerContent.firstElementChild !== headerMobileImg) {
       headerContent.insertBefore(headerMobileImg, headerContent.firstChild);
     }
-    // remove intro links
-    if (introText.children[1]){
-      introText.removeChild(introLinks);
+    // remove header assesment
+    if (introText.children[1]) {
+      introText.removeChild(assessmentHeader);
     }
+    //add mobile-mode assessment
+    if (assessmentMoblCont.firstElementChild !== assessmentMobile) {
+      assessmentMoblCont.insertBefore(assessmentMobile, assessmentMoblCont.firstChild);
+    }
+    // take out intro text style
+    introTextLeadIn.removeAttribute('style');
     // turn off toggle text
     toggleTextOnOff('off');
   }
@@ -79,9 +95,9 @@ function toggleTextOnOff(command) {
     for (var i = 0; i < faqPara.length; i++) {
       faqPara[i].parentElement.removeChild(faqShowHideSpan[i]);
       // insert full text if it's minimized
-      if (faqPara[i].innerText.length < 304){
+      if (faqPara[i].innerText.length < 304) {
         faqPara[i].innerText = faqParaCopy[i];
-      }       
+      }
     }
   }
 }
