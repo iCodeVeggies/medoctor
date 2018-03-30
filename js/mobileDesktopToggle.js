@@ -12,6 +12,9 @@ var assessmentHeader = document.querySelector('#assessment-header');
 // Assessment section
 var assessmentMoblCont = document.querySelector('#assessment div.container');
 var assessmentMobile = document.querySelector('#assessment-mobile');
+var imgStandAloneContainer = document.querySelector('#img-stand-alone');
+var imgStandAlone = document.querySelector('img.img-stand-alone');
+
 // FAQs section
 var faqSection = document.querySelector('#faq');
 var faqPara = document.querySelectorAll('#faq p');
@@ -24,6 +27,9 @@ window.onload = (function () {
   copyFullText();
   toggleMobileDesktop();
   addListeners();
+  console.log(imgStandAloneContainer);
+  console.log(imgStandAlone);
+
 })()
 window.onresize = function () {
   toggleMobileDesktop();
@@ -54,6 +60,10 @@ function toggleMobileDesktop() {
     if (assessmentMoblCont.firstElementChild === assessmentMobile) {
       assessmentMoblCont.removeChild(assessmentMobile);
     }
+    // remove stand-alone doctor image
+    if (imgStandAloneContainer.firstElementChild === imgStandAlone){
+      imgStandAloneContainer.removeChild(imgStandAlone);
+    }
     // style intro text
     introTextLeadIn.setAttribute('style', 'width: 700px; float: right;'); 
     // turn on toggle tex
@@ -74,6 +84,10 @@ function toggleMobileDesktop() {
     //add mobile-mode assessment
     if (assessmentMoblCont.firstElementChild !== assessmentMobile) {
       assessmentMoblCont.insertBefore(assessmentMobile, assessmentMoblCont.firstChild);
+    }
+    // add stand-alone doctor image
+    if (imgStandAloneContainer.firstElementChild !== imgStandAlone){
+      imgStandAloneContainer.insertBefore(imgStandAlone, imgStandAloneContainer.firstChild);
     }
     // take out intro text style
     introTextLeadIn.removeAttribute('style');

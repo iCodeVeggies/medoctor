@@ -62,7 +62,7 @@ section {
 }
 
 .mid-sized-text {
-    font-size: 18px;
+    font-size: 22px;
     font-style: normal;
     font-family: "Josefin Sans", Helvetica, sans-serif;
     line-height: 1.5;
@@ -74,6 +74,10 @@ section {
 
 .text-block>span {
     color: #67A8E8;
+}
+
+header.masthead .intro-text {
+    padding-top: 150px;
 }
 
 header.masthead .intro-text .intro-lead-in {
@@ -319,6 +323,11 @@ header.masthead {
     
     .text-block {
         margin-top: .25em;
+    }
+
+    .mid-sized-text {
+        font-size: 18px;
+        padding-top: 10px;
     }
 
     .col,
