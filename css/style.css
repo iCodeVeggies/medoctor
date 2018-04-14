@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     height: 100%;
 }
 
@@ -80,16 +81,15 @@ header.masthead .intro-text {
     padding-top: 150px;
 }
 
-header.masthead .intro-text .intro-lead-in {
+header.masthead .intro-text .intro-lead-in h1 {
+    font-weight: normal;
     font-style: normal;
     font-family: "Josefin Sans", Helvetica, sans-serif;
 }
 
-
 .img-stand-alone {
     margin-top: 1em;
 }
-
 
 /* DEFAULT NAV */
 
@@ -128,7 +128,6 @@ header.masthead .intro-text .intro-lead-in {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-
 /* REGULAR TEXT LINK */
 
 a.text-link {
@@ -138,7 +137,6 @@ a.text-link {
 a.text-link:hover {
     color: #0d47a1;
 }
-
 
 /* DOWN ARROW */
 
@@ -152,7 +150,6 @@ a#go-arrow {
 a#go-arrow:hover {
     color: #9e9e9e;
 }
-
 
 /* MAKE ARROW BOUNCE */
 
@@ -225,7 +222,6 @@ a#go-arrow:hover {
     animation: bounce 2s infinite;
 }
 
-
 /* BOOSTRAP CARD */
 
 div.card {
@@ -248,13 +244,11 @@ div.card {
     text-decoration: none;
 }
 
-
 /* FORM */
 
 .form-row {
     margin: 0.10em;
 }
-
 
 /* TIMELINE */
 
@@ -268,20 +262,24 @@ div.card {
 }
 
 /* HEADER BACKGROUND */
-header.masthead { 
-    height: 100%; 
+
+header.masthead {
+    height: 100%;
     background-size: cover;
 }
 
 /* FONT AWESOME ICONS */
-.fa-plus, .fa-minus {
+
+.fa-plus,
+.fa-minus {
     color: #67A8E8;
 }
-.fa-plus:hover, .fa-minus:hover {
+
+.fa-plus:hover,
+.fa-minus:hover {
     color: #0d47a1;
     cursor: pointer;
 }
-
 
 /* MOBILE MODE */
 
@@ -293,8 +291,18 @@ header.masthead {
         margin: 0;
         padding: 0.25em;
     }
-
-    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         margin-bottom: .01rem;
     }
     /* give more space when no text in header */
@@ -310,26 +318,26 @@ header.masthead {
         padding-bottom: 5px;
     }
     header.masthead .intro-text .intro-lead-in {
+        margin-bottom: 3px;
+        margin-top: 0;
+    }
+    header.masthead .intro-text .intro-lead-in h1 {
+        font-weight: normal;
         font-size: 20px;
         font-style: normal;
         font-family: "Josefin Sans", Helvetica, sans-serif;
         line-height: normal;
-        margin-bottom: 3px;
-        margin-top: 0;
     }
     ul.social-buttons {
         margin: 1em;
     }
-    
     .text-block {
         margin-top: .25em;
     }
-
     .mid-sized-text {
         font-size: 18px;
         padding-top: 10px;
     }
-
     .col,
     .col-12,
     .col-4,
@@ -358,7 +366,7 @@ header.masthead {
         padding-right: 5px;
         padding-left: 5px;
     }
-    div.form-group{
+    div.form-group {
         margin: 0;
     }
     div.card-body {
