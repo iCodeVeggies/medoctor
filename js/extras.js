@@ -7,6 +7,6 @@ var pageSections = document.querySelectorAll('section');
 
 window.onload = function () {
    for (var i = 0; i < pageSections.length; i++) {
-      pageSections[i].style.marginTop = `${navbar.scrollHeight}px`;
+      pageSections[i].style.marginTop = navbar.scrollHeight+'px';
    }
 }
